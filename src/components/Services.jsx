@@ -1,15 +1,56 @@
-<>
-  import {"{"} services {"}"} from '../data' import Title from './Title' import
-  Service from './Service' const Services = () =&gt; {"{"}
+function Services() {
   return (
-  <section classname="section services" id="services">
-    <title title="our" subtitle="services">
-      &lt;div className='section-center services-center'&gt;
-      {"{"}services.map((service) =&gt; {"{"}
-      return &lt;Service {"{"}...service{"}"} key={"{"}service.id{"}"} /&gt;
-      {"}"}){"}"}
-      &lt;/div&gt; &lt;/section&gt; ){"}"}
-      export default Services
-    </title>
+    <>
+  {/*  Services section starts */}
+  <section className="section services" id="services">
+    <div className="section-title">
+      <h2>
+        our <span>services</span>
+      </h2>
+    </div>
+    <div className="section-center services-center">
+      <article className="service">
+        <span className="service-icon">
+          <i className="fas fa-wallet fa-fw" />
+        </span>
+        <div className="service-info">
+          <h4 className="service-title">saving money</h4>
+          <p className="service-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores,
+            officia.
+          </p>
+        </div>
+      </article>
+      <article className="service">
+        <span className="service-icon">
+          <i className="fas fa-tree fa-fw" />
+        </span>
+        <div className="service-info">
+          <h4 className="service-title">endless hiking</h4>
+          <p className="service-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores,
+            officia.
+          </p>
+        </div>
+      </article>
+      <article className="service">
+        <span className="service-icon">
+          <i className="fas fa-socks fa-fw" />
+        </span>
+        <div className="service-info">
+          <h4 className="service-title">amazing comfort</h4>
+          <p className="service-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores,
+            officia.
+          </p>
+        </div>
+      </article>
+    </div>
   </section>
+  {/*  services section ends */}
 </>
+
+  );
+}
+
+export default Services;
